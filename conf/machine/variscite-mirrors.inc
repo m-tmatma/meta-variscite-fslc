@@ -15,3 +15,9 @@ MIRRORS += "\
     ${DEBIAN_MIRROR} https://snapshot.debian.org/archive/debian/20150212T040413Z/pool \n \
 "
 
+# Force nobranch to fix renamed default branch
+INHERIT += "srcuri-force-nobranch"
+
+SRCURI_FORCE_NOBRANCH_LIST ??= " \
+    puzzles git://git.tartarus.org/simon/puzzles.git \n \
+"
